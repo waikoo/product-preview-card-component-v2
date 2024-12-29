@@ -102,3 +102,41 @@ body {
     gap: 1rem;
     cursor: pointer;
 }
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .perfume__img {
+        height: 100%;
+    }
+
+    .perfume__card {
+        display: flex;
+        height: 700px;
+    }
+
+    .perfume__img {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .perfume__card {
+        border-radius: 0 10px 10px 0;
+        height: 570px;
+    }
+
+    .perfume__content {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        padding: 3.2rem;
+    }
+
+    .perfume__title {
+        margin-top: 2rem;
+    }
+}
