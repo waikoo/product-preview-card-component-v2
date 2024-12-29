@@ -1,0 +1,104 @@
+html {
+--clr-dark-cyan: hsl(158, 36%, 37%);
+--clr-cream: hsl(30, 38%, 92%);
+
+--clr-very-dark-blue: hsl(212, 21%, 14%);
+--clr-dark-grayish-blue: hsl(228, 12%, 48%);
+--clr-white: hsl(0, 0%, 100%);
+
+--ff-montserrat: 'Montserrat', sans-serif;
+--ff-fraunces: 'Fraunces', serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--clr-cream);
+}
+
+/* Typography */
+.perfume__pre-title, .perfume__description, .perfume__old-price {
+    color: var(--clr-dark-grayish-blue);
+}
+.perfume__pre-title, .perfume__description, .perfume__old-price, .perfume__button {
+    font-family: var(--ff-montserrat);
+}
+
+.perfume__title, .perfume__current-price {
+    font-family: var(--ff-fraunces);
+}
+
+.perfume__title {
+    font-size: 2.5rem;
+    margin: 16px 0;
+    line-height: 1;
+}
+
+.perfume__pre-title {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.perfume__card {
+    background: var(--clr-white);
+}
+
+.perfume__current-price {
+    color: var(--clr-dark-cyan);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.perfume__button {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.perfume__description {
+    line-height: 1.5;
+}
+
+/* Img */
+.perfume__img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Layout */
+
+.perfume__card {
+    margin: 2.2rem 1.5rem;
+}
+
+.perfume__content {
+    padding: 1.5rem;
+}
+
+.perfume__price-con {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    gap: 1rem;
+}
+
+.perfume__old-price {
+    text-decoration: line-through;
+}
+
+.perfume__button {
+    background: var(--clr-dark-cyan);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
